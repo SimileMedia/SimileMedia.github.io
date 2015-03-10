@@ -1,131 +1,108 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Unity Web Player | Forests of the Jama-Coaque </title>
-		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
-		<script type="text/javascript">
-		<!--
-		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
-		if (document.location.protocol == 'https:')
-			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
-		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
-		-->
-		</script>
-		<script type="text/javascript">
-		<!--
-			var config = {
-				width: 960, 
-				height: 600,
-				params: { enableDebugging:"0" }
-				
-			};
-			var u = new UnityObject2(config);
-			
-			jQuery(function() {
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christopher Karounos' Hypertext Resume</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="Resume.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
 
-				var $missingScreen = jQuery("#unityPlayer").find(".missing");
-				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
-				$missingScreen.hide();
-				$brokenScreen.hide();
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
 
-				u.observeProgress(function (progress) {
-					switch(progress.pluginStatus) {
-						case "broken":
-							$brokenScreen.find("a").click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$brokenScreen.show();
-						break;
-						case "missing":
-							$missingScreen.find("a").click(function (e) {
-								e.stopPropagation();
-								e.preventDefault();
-								u.installPlugin();
-								return false;
-							});
-							$missingScreen.show();
-						break;
-						case "installed":
-							$missingScreen.remove();
-						break;
-						case "first":
-						break;
-					}
-				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "Build.unity3d");
-			});
-		-->
-		</script>
-		<style type="text/css">
-		<!--
-		body {
-			font-family: Helvetica, Verdana, Arial, sans-serif;
-			background-color: black;
-			color: white;
-			text-align: center;
-		}
-		a:link, a:visited {
-			color: #bfbfbf;
-		}
-		a:active, a:hover {
-			color: #bfbfbf;
-		}
-		p.header {
-			font-size: small;
-		}
-		p.header span {
-			font-weight: bold;
-		}
-		p.footer {
-			font-size: x-small;
-		}
-		div.content {
-			margin: auto;
-			width: 960px;
-		}
-		div.broken,
-		div.missing {
-			margin: auto;
-			position: relative;
-			top: 50%;
-			width: 193px;
-		}
-		div.broken a,
-		div.missing a {
-			height: 63px;
-			position: relative;
-			top: -31px;
-		}
-		div.broken img,
-		div.missing img {
-			border-width: 0px;
-		}
-		div.broken {
-			display: none;
-		}
-		div#unityPlayer {
-			cursor: default;
-			height: 600px;
-			width: 960px;
-		}
-		-->
-		</style>
-	</head>
-	<body>
-		<p class="header"><span>Unity Web Player | </span>Forests of the Jama-Coaque </p>
-		<div class="content">
-			<div id="unityPlayer">
-				<div class="missing">
-					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
-						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
-					</a>
-				</div>
-			</div>
-		</div>
-		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
-	</body>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="Header">Christopher Karounos</div>
+  <div id="Contact">
+  	<ul>
+    	<li> <a href="tel: 8593964496">(859) 396-4496</a>
+        </li>
+        <script type="text/javascript">
+			if (screen.width > 481){
+				document.write('|');
+			}
+       	</script>
+        <li> 3170 Canyon Crest Dr; Apt 26</li> 
+       	<script type="text/javascript">
+			if (screen.width > 481){
+				document.write('|');
+			}
+       	</script>
+        <li><a href="mailto:ckaroun@gmail.com"> ckaroun@gmail.com </a>
+        </li>
+  	</ul>
+  </div>
+  <div id="Divider" class="separator">Completed Websites</div>
+  <div id="Content" class="content">
+  	<ul>
+     	<li> <a href="goclex.org"> goclex.org </a>; (Biannual Greek Bakesale)</li>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Coded HTML, CSS, Jquery from scratch. Optimized functionality based off Google Analytics. Made cross-browser compatible using DW as IDE
+        <li> <a href= "hostaltimara.com">hostaltimara.com </a> (Hotel in Banos, Ecuador) </li>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Adapted from goclex.org HTML/CSS/Jquery code.
+     </ul>
+  </div>
+  <div id="Divider2" class="separator">Programming Languages</div>
+  <div id="Content2" class="content"> HTML/CSS/Jquery (proficient) &nbsp; ~ &nbsp; PHP &nbsp;(learning) &nbsp; ~ &nbsp; MySQL &nbsp;(learning) &nbsp; ~ &nbsp; XML/Xpath &nbsp;(elementary) &nbsp; ~&nbsp; R statistics &nbsp;(proficient)&nbsp;~&nbsp; C++ &nbsp;(proficient) &nbsp;~&nbsp; Python &nbsp;(proficient) </div>
+  <div id="Divider3" class="separator">Design Software</div>
+  <div id="Content3" class="content">Photoshop and Dreamweaver</div>
+  <div id="Divider4" class="separator">Education</div>
+  <div id="Content4" class="content"><p style= "font-weight:bold"> University of Kentucky. 2010 - 2014  | Study Abroad: Universidad de Belgrano. Jan 2013 - Aug 2013 </p> 
+ Degree: B.S. <em> summa cum laude </em>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Major: Biology with <a href="https://bio.as.uky.edu/biology-scholars-program">Honors</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Minor: Spanish, Global Studies   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       GPA: 3.8 <br> <br> 
+ Relevant Courses: &nbsp; Computer Programming I & II, Web Design (School of Art), Computational Biology
+</div>
+  <div id="Divider5" class="separator">Side Projects</div>
+  <div id="Content5" class="content"> 
+  	<ul>
+    	<li> Designing a <a href="build.html"> video game </a> for Third Millennium Alliance using C# and Unity game engine </li>			
+        <li> Search Engine marketing for Third Millennium Alliance’s website tmalliance.org </li>
+    </ul>    
+  </div>
+  <div id="Divider6" class="separator">Work Experience</div>
+  <div id="Content6" class="content">
+  	<ul>
+    	<li> Tutor through<a href="www.wyzant.com/Tutors/KentuckyChris"> Wyzant</a>. ($15-$25/hr) 02/2015- present </li>
+		<li> Interned with <a href="tmalliance.org/internships/" >Third Millennium Alliance</a>. Conducted field study. Analyzed results with GIS and R. (unpaid) 06/2014-09/2014 </li>
+        <li> Tutored organic chemistry, chemistry and biology for <a href="www.uky.edu/Diversity/SSS/"> Student Support Services</a>, a federal program at the University of Kentucky that helps disadvantaged students. ($8/hr) 01/2013 - 05/2014 </li> 
+		<li> Taught weekly rock climbing <a href="www.uky.edu/campusrec/outdoor-pursuits/climbing-wall" >belay and safety class</a> at University of Kentucky gym while working as a rock wall employee. ($7.50/hr) 08/2011-12/2012 </li>
+  	</ul>
+  </div>
+  <div id="Divider7" class="separator">Research Projects</div>
+  <div id="Content7" class="content">Department of Biology, University of Kentucky <br>
+Undergraduate Biology Honors Research <br>
+Research Advisors: Dr. Nicholas McLetchie, Philip H Crowley, Jeremiah Smith  2011- 2014
+	<ul>
+		<li> Empirical test of game theory predictions  in relation to soil nutrient competition in mustard rape.<a href="http://uknowledge.uky.edu/kaleidoscope/vol11/iss1/92/"> Published here </a> </li>
+        <li> Analysis of interspecific interference competition through allelopathy by combining greenhouse experiments with RNA- seq data from NCBI database. Presented at International Symposium on Plant Signaling and Behavior in  New Delhi, India. </li>
+    </ul>
+</div>
+  <div id="Divider8" class="separator">Awards</div>
+  <div id="Content8" class="content">
+  	<ul>
+  		<li> $1000 <a href="www.uky.edu/academy/honors-scholarhips"> Kate Johnson Scholarship</a> for field-based academic effort (2014)</li>
+        <li> $300 University of Kentucky <a href=" http://www.uky.edu/international/node/585"> Education Abroad Scholarship</a> (2014) </li>
+		<li> $1000 University of Kentucky <a href"http://www.uky.edu/academy/research-travel-grant" >travel grants </a> (2014; 2012) </li>
+		<li> $1500 <a href="https://bio.as.uky.edu/scholarships-2"> Ribble Research Scholarship </a> for excellence in research and academics (2012) </li>
+		<li> Honorable mention for <a href="http://www.uky.edu/academy/oswald" > Oswald Research and Creativity Award </a> in biology (2012) </li>
+		<li> $200 University of Kentucky Honors Program <a href="www.uky.edu/academy/honors-scholarhips">Independent Project Grant</a> (2011) </li>
+    </ul>
+  </div>
+</div>
+</body>
 </html>
