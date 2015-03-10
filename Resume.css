@@ -11,8 +11,27 @@
 	text-align:center;
 	
 	}
+#madein{
+	display: absolute;
+	font-size: 8pt;
+	top: 0px;
+	right: 0px;
+	text-align: right;
+	height: 20px;
+}
+
+
+
+
+
+
+
 #Contact{
 	text-align:center;
+	right: 0px;
+	top: 0px;
+	right: 0px;
+	top: 0px;
 	
 	
 	}
@@ -522,4 +541,3 @@ img, object, embed, video {
 	display: block;
 }
 }
-
