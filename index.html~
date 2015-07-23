@@ -36,7 +36,7 @@ Do the following if you're using your customized build of modernizr (http://www.
 			<!--	<img class="puzzleimage" src= "Puzzle 3.jpg" alt="biology puzzle" height= "500" >-->
 		</div>	
 		<div class= "block">
-			<img class="puzzleimage" src= "Plant ID.jpg" alt="california plant identification" height="500">
+			<img class="puzzleimage" src= "Plant ID.jpg" alt="california plant identification" >
 		</div>
 			<!--</div> -->
 		<!--	</div>-->
