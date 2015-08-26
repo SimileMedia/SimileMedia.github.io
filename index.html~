@@ -31,13 +31,14 @@ Do the following if you're using your customized build of modernizr (http://www.
 <div class="gridContainer clearfix">
 	<!--<div id= "center">-->
 	
-			<h3> ID this plant </h3>
+			<h3>  </h3>
 		<div class= "block">
 			<!--	<img class="puzzleimage" src= "Puzzle 3.jpg" alt="biology puzzle" height= "500" >-->
 		</div>	
 		<div class= "block">
-			<img class="puzzleimage" src= "Plant ID.jpg" alt="california plant identification" >
+			<img class="puzzleimage" src= "Puzzle 4.jpg" alt="Biology themed puzzle for graduate students" >
 		</div>
+		<!--	Ivan is an engineering physicist. He had a good philosophy. He just sent his feelers out in every direction and found what worked.-->
 			<!--</div> -->
 		<!--	</div>-->
 
